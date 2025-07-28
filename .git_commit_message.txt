@@ -1,0 +1,8 @@
+feat: Add Chrome Extensions page and update links
+
+- Created a new page for Chrome extensions (`/extensions`).
+- Added details for SideTray and Midjourney Image Downloader extensions.
+- Integrated screenshots (`st.png`, `mj.png`) into the extensions page.
+- Updated navigation bar to include a link to the new extensions page.
+- Added a link to the extensions page on the Home page.
+- Updated Substack link in Media page to the new URL.

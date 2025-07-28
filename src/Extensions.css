@@ -1,0 +1,67 @@
+.extensions-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.extension-item {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.extension-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.extension-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.extension-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.extension-item li {
+  margin-bottom: 10px;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.extension-title {
+  font-size: 2.5em; /* 目立つように大きく */
+  color: #333; /* 濃いめの色 */
+  margin-bottom: 15px; /* 画像との間にスペース */
+  text-align: center;
+}
+
+.extension-screenshot {
+  max-width: 100%; /* 親要素に合わせて画像を調整 */
+  height: auto;
+  display: block; /* 中央寄せのためにブロック要素に */
+  margin: 0 auto 20px auto; /* 中央寄せと下マージン */
+  border: 1px solid #ddd; /* 軽い枠線 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 軽い影 */
+}

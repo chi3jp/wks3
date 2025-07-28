@@ -1,0 +1,117 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* Light */
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover effect for cards */
+.card-link-wrapper {
+  position: relative;
+  display: block; /* Make the wrapper a block-level element */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(106, 13, 173, 0.85); /* #6A0DAD の少し濃い半透明 */
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-link-wrapper:hover .card-overlay {
+  height: 100%;
+}
+
+.card-overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.card-link-wrapper .shop-item-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 下線の幅を100%にする */
+  height: 2px; /* 下線の太さ */
+  background-color: #6A0DAD; /* アメジストに近い色 */
+}
+
+.shop-item-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* 下線とテキストの間のスペース */
+}
+
+.home-explore-links .shop-item-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* 初期状態では幅を0にする */
+  height: 2px; /* 下線の太さ */
+  background-color: #6A0DAD; /* アメジストに近い色 */
+  transition: width 0.3s ease-out; /* アニメーションの速度とイージング */
+}
+
+.home-explore-links .shop-item-title:hover::after {
+  width: 100%; /* ホバー時に幅を100%にする */
+}
